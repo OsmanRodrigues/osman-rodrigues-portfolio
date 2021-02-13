@@ -1,4 +1,5 @@
-import Head from 'next/head';
+import React from 'react'
+import Head from 'next/head'
 
 export default function Home() {
   return (
@@ -11,5 +12,5 @@ export default function Home() {
         <h1>My website</h1>
       </main>
     </div>
-  );
+  )
 }
