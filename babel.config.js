@@ -1,7 +1,8 @@
-//TODO:
-//plugin list:
-//babel-plugin-inline-react-svg
 module.exports = {
-  presets: ['next/babel'],
+  presets: [
+    'next/babel',
+    ['@babel/preset-env', { targets: { node: 'current' } }],
+    '@babel/preset-react'
+  ],
   plugins: [['styled-components', { ssr: true }], 'inline-react-svg']
 }
