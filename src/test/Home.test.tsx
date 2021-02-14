@@ -1,8 +1,11 @@
-import React from 'react'
-import Home from '../pages/index'
-import { render } from '@testing-library/react'
+import { getPage } from 'next-page-tester'
+import { screen } from '@testing-library/react'
 
-test('check render', () => {
-  const { queryByText } = render(<Home />)
-  expect(queryByText(/My website/i)).toBeTruthy()
+describe('Home page', () => {
+  it('renders home page', async () => {
+    const { render, page } = await getPage({ route: '/' })
+    console.log(page)
+    render()
+    expect(screen.getByText(/My website/i)).toBeTruthy()
+  })
 })
