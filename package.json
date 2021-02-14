@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "check-types": "tsc --noEmit",
+    "lint": "eslint 'src/**/*.{ts,tsx}' && yarn check-types",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
