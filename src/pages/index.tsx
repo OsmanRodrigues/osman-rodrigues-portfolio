@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { MyComponent } from '../components/MyComponent'
+import { MyComponent } from '@components/MyComponent'
 
 // TODO: import Logo  from '../assets/logo.svg
 
