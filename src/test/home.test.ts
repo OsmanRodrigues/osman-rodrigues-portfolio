@@ -1,4 +1,4 @@
-import { MyPage } from '../../mocks/mocks'
+import { MyPage } from '../mocks/mocks'
 
 test('It should be ok', () => {
   const Home = new MyPage()
