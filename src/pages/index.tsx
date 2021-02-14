@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import { MyComponent } from '../components/MyComponent'
 
 // TODO: import Logo  from '../assets/logo.svg
 
@@ -10,10 +11,9 @@ const Home: React.FC = () => {
         <title>Homepage</title>
       </Head>
 
-      <main>
-        <h1>My website</h1>
-      </main>
+      <MyComponent />
     </div>
   )
 }
+
 export default Home
