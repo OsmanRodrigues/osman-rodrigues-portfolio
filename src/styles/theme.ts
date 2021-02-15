@@ -1,4 +1,9 @@
-import { PalleteColor, Spacing, Typography } from '@shared/atomic/obj/constants'
+import {
+  Border,
+  PalleteColor,
+  Spacing,
+  Typography
+} from '@shared/atomic/obj/constants'
 
 const theme = {
   colors: {
@@ -21,7 +26,8 @@ const theme = {
     padding: {
       normal: Spacing.Padding,
       large: Spacing.LargePadding
-    }
+    },
+    border: Border
   }
 }
 

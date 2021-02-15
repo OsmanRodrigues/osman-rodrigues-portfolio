@@ -13,6 +13,7 @@ const Wrapper = styled.nav`
     }
   }) => `${padding.normal} ${padding.large}`};
 `
+// TODO: set to grid
 const ActionArea = styled.div`
   width: 20%;
   height: 100%;

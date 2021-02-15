@@ -1,5 +1,6 @@
 export enum Border {
-  Radius = '8px'
+  Radius = '0.5rem',
+  Thickness = '0.25rem'
 }
 export enum PalleteColor {
   Primary = '#612F74',

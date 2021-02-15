@@ -8,10 +8,11 @@ const { Wrapper, ActionArea } = NavBarStyled
 export const NavBar: React.FC = () => {
   return (
     <Wrapper>
+      {/* TODO: change this H1 to another element */}
       <H1 highlighted={true}>Osman R.</H1>
       <ActionArea>
-        <LinkButton href="">Projetos</LinkButton>
-        <LinkButton href="">Contato</LinkButton>
+        <LinkButton href="/projects">Projetos</LinkButton>
+        <LinkButton href="/contact">Contato</LinkButton>
       </ActionArea>
     </Wrapper>
   )

@@ -10,6 +10,13 @@ export const LinkButtonWrapper = styled.button`
   }
   border: none;
   background: none;
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom: solid
+      ${({ theme }) =>
+        `${theme.colors.primary} ${theme.spacing.border.Thickness}`};
+  }
   ${buttonStyles}
 `
 export const SimpleButton = styled.button`
