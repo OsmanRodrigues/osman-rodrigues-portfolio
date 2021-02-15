@@ -1,3 +1,4 @@
+// 1rem = 16px
 export enum PalleteColor {
   Primary = '#612F74',
   Secondary = '#E5E5E5',
@@ -11,6 +12,13 @@ export enum Typography {
   Family = 'sans-serif',
   Medium = '1rem',
   Large = '1.5rem'
+}
+export enum Breakpoint {
+  XSmall = '20rem',
+  Small = '23rem',
+  Medium = '50rem',
+  Large = '100rem',
+  XLarge = '123rem'
 }
 export const border = {
   radius: '0.5rem',
