@@ -1,4 +1,4 @@
-import { Breakpoint } from '@atomic/obj/constants'
+import { Breakpoint, overlayStyle } from '@styles/constants'
 import styled from 'styled-components'
 
 export type CurrentLayer = 'button' | 'overlay'
@@ -18,8 +18,11 @@ const OpenButton = styled.button<BurgerMenuStyledProps>`
 `
 const CloseButton = styled.button``
 const Overlay = styled.div<BurgerMenuStyledProps>`
+  ${overlayStyle}
   display: ${({ currentLayer }) =>
     currentLayer === 'overlay' ? 'initial' : 'none'};
+  background-color: ${({ theme }) => theme.colors.primary};
+  border: 1px solid red;
 `
 
 export const BurgerMenuStyled = {

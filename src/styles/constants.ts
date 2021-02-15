@@ -1,4 +1,5 @@
-// 1rem = 16px
+import { css } from 'styled-components'
+
 export enum PalleteColor {
   Primary = '#612F74',
   Secondary = '#E5E5E5',
@@ -20,6 +21,11 @@ export enum Breakpoint {
   Large = '100rem',
   XLarge = '123rem'
 }
+export enum ZIndex {
+  Low = -1,
+  Neutral = 0,
+  High = 100
+}
 export const border = {
   radius: '0.5rem',
   thickness: '0.25rem'
@@ -29,3 +35,11 @@ export const padding = {
   medium: '1rem',
   large: '2rem'
 }
+export const overlayStyle = css`
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: ${ZIndex.High};
+`

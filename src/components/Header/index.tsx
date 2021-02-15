@@ -22,4 +22,5 @@ const Header: React.FC = () => {
     </HeaderStyled.Wrapper>
   )
 }
+
 export default Header

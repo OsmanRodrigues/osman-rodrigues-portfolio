@@ -1,4 +1,4 @@
-import { Breakpoint } from '@atomic/obj/constants'
+import { Breakpoint } from '@styles/constants'
 import styled, { css } from 'styled-components'
 
 const Wrapper = styled.header`
