@@ -1,14 +1,19 @@
-// TODO: set design system here
-import { PalleteColor } from '@shared/obj/constants'
+import { PalleteColor, Typography } from '@shared/obj/constants'
 
 const theme = {
   colors: {
+    acessory: PalleteColor.Acessory,
+    background: PalleteColor.Secondary,
+    highlight: PalleteColor.Black,
+    link: PalleteColor.Acessory,
     primary: PalleteColor.Primary,
     secondary: PalleteColor.White,
-    background: PalleteColor.Secondary,
     text: PalleteColor.White,
-    title: PalleteColor.Gray,
-    acessory: PalleteColor.Acessory
+    title: PalleteColor.Gray
+  },
+  typography: {
+    font: Typography.Font,
+    family: Typography.Family
   }
 }
 

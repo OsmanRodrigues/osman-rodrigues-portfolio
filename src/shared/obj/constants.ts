@@ -1,3 +1,6 @@
+export enum Border {
+  Radius = '8px'
+}
 export enum PalleteColor {
   Primary = '#612F74',
   Secondary = '#E5E5E5',
@@ -5,4 +8,8 @@ export enum PalleteColor {
   Gray = '#828282',
   Black = '#333333',
   White = '#FFFFFF'
+}
+export enum Typography {
+  Font = 'Roboto',
+  Family = 'sans-serif'
 }
