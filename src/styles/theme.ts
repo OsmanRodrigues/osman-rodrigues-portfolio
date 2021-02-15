@@ -1,11 +1,11 @@
-import { PalleteColor, Typography } from '@shared/obj/constants'
+import { PalleteColor, Spacing, Typography } from '@shared/atomic/obj/constants'
 
 const theme = {
   colors: {
     acessory: PalleteColor.Acessory,
     background: PalleteColor.Secondary,
     highlight: PalleteColor.Black,
-    link: PalleteColor.Acessory,
+    link: PalleteColor.Gray,
     primary: PalleteColor.Primary,
     secondary: PalleteColor.White,
     text: PalleteColor.White,
@@ -13,7 +13,15 @@ const theme = {
   },
   typography: {
     font: Typography.Font,
-    family: Typography.Family
+    family: Typography.Family,
+    size: Typography.Size,
+    largeSize: Typography.LargSize
+  },
+  spacing: {
+    padding: {
+      normal: Spacing.Padding,
+      large: Spacing.LargePadding
+    }
   }
 }
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import { MyComponent } from '@components/MyComponent'
 import Head from 'next/head'
+import { NavBar } from '@components/NavBar/NavBar'
 
 // TODO: import Logo  from '../assets/logo.svg
 
@@ -10,8 +10,7 @@ const Home: React.FC = () => {
       <Head>
         <title>Home</title>
       </Head>
-
-      <MyComponent />
+      <NavBar />
     </div>
   )
 }
