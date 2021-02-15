@@ -11,6 +11,6 @@ export default createGlobalStyle`
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
     font-family: ${({ theme: { typography } }) =>
-      `${typography.font}, ${typography.family}`} ;
+      `${typography.font}, ${typography.family}`};
   }
 `
