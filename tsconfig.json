@@ -26,8 +26,8 @@
       "@pages/*": ["pages/*"],
       "@styles": ["styles"],
       "@styles/*": ["styles/*"],
-      "@shared": ["shared"],
-      "@shared/*": ["shared/*"]
+      "@atomic": ["atomic"],
+      "@atomic/*": ["atomic/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
