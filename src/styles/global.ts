@@ -10,6 +10,7 @@ export default createGlobalStyle`
   body{
     background: ${({ theme }) => theme.colors.background};
     color: ${({ theme }) => theme.colors.text};
-    /* font: ; TODO: set font  */
+    font-family: ${({ theme: { typography } }) =>
+      `${typography.font}, ${typography.family}`};
   }
 `

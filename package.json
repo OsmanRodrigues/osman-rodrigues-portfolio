@@ -5,10 +5,10 @@
   "scripts": {
     "check-types": "tsc --noEmit",
     "lint": "eslint 'src/**/*.{ts,tsx}' && yarn check-types",
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "test": "jest"
+    "dev": "yarn lint && yarn next dev",
+    "build": "yarn lint && yarn next build",
+    "start": "yarn lint && yarn next start",
+    "test": "yarn jest"
   },
   "dependencies": {
     "@testing-library/react": "11.2.5",
