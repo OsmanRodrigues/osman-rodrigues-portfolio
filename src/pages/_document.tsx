@@ -43,8 +43,12 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-          {/* TODO: set font here */}
-          <link href="" rel="stylesheet" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+            rel="stylesheet"
+          />
+
           {/* TODO: set favicon here */}
           <link href="" rel="icon" />
         </Head>
