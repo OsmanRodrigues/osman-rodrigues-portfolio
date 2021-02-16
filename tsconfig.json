@@ -21,6 +21,7 @@
       "@/assets/*": ["assets/*"],
       "@/components/*": ["components/*"],
       "@/pages/*": ["pages/*"],
+      "@/public/*": ["public/*"],
       "@/styles/*": ["styles/*"],
       "@/atomic/*": ["atomic/*"]
     }

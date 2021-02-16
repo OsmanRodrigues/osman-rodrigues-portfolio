@@ -4,5 +4,5 @@ module.exports = {
     ['@babel/preset-env', { targets: { node: 'current' } }],
     '@babel/preset-react'
   ],
-  plugins: [['styled-components', { ssr: true }], 'inline-react-svg']
+  plugins: [['styled-components', { ssr: true }]]
 }
