@@ -1,9 +1,4 @@
-interface Project {
-  title: string
-  subtitle: string
-  description: string
-  url: string
-}
+import { Project } from '@/models/project-model'
 
 const singleProject: Project = {
   title: 'Metaliflix',

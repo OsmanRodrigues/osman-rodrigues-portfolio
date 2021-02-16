@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 const Wrapper = styled.header`
   position: relative;
   top: 0;
-  width: 100vw;
+  width: 100%;
   max-height: 5rem;
   display: flex;
   justify-content: space-between;

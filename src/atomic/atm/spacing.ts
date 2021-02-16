@@ -2,7 +2,7 @@ import { Breakpoint, PalleteColor } from '@/styles/constants'
 import styled from 'styled-components'
 
 interface VSeparatorProps {
-  size?: 'medium' | 'large'
+  size?: 'small' | 'medium' | 'large'
 }
 
 export const HR = styled.hr`
@@ -17,5 +17,5 @@ export const HR = styled.hr`
 export const VSeparator = styled.div<VSeparatorProps>`
   display: block;
   padding: ${({ size, theme: { padding } }) =>
-    size === 'large' ? padding.large : padding.medium};
+    size ? padding[size] : padding.medium};
 `

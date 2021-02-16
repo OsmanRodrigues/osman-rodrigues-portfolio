@@ -6,9 +6,11 @@ import { Logo } from '@/assets/Logo'
 import { HR, VSeparator } from '@/atomic/atm/spacing'
 import { HomeStyled } from '@/styles/pages-style/home.style'
 import { H2 } from '../atomic'
+import { projects } from 'mocks'
+import ProjectCard from '@/components/ProjectCard'
 
 const { pageTitle, pageText } = strings
-
+// TODO: implements masonry grid
 const Home: React.FC = () => {
   return (
     <Container>
@@ -30,7 +32,19 @@ const Home: React.FC = () => {
         </Col>
       </Row>
       <Row>
-        <Col></Col>
+        <Col>
+          <HomeStyled.Gallery>
+            {projects.map((project, index) => {
+              return (
+                <ProjectCard
+                  reverse={index % 2 !== 0}
+                  key={project.title + index}
+                  {...project}
+                />
+              )
+            })}
+          </HomeStyled.Gallery>
+        </Col>
       </Row>
       <Row>
         <Col></Col>
