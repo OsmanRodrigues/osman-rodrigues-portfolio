@@ -1,4 +1,4 @@
-import { border, padding, PalleteColor, Typography } from 'atomic/obj/constants'
+import { PalleteColor, Typography, border, padding } from './constants'
 
 const theme = {
   border,

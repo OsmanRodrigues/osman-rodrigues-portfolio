@@ -1,3 +1,4 @@
+import { Breakpoint } from '@styles/constants'
 import styled, { css } from 'styled-components'
 
 const Wrapper = styled.header`
@@ -38,6 +39,9 @@ const NavBar = styled.nav`
     &:focus {
       border-bottom: solid
         ${({ theme }) => `${theme.colors.primary} ${theme.border.thickness}`};
+    }
+    @media (max-width: ${Breakpoint.Medium}) {
+      display: none;
     }
   }
 `
