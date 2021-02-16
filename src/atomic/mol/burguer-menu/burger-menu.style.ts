@@ -3,7 +3,7 @@ import {
   buttonRawStyle,
   overlayStyle,
   Transition
-} from '@styles/constants'
+} from '@/styles/constants'
 import styled from 'styled-components'
 
 export type CurrentLayer = 'button' | 'overlay'

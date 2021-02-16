@@ -1,13 +1,13 @@
 import React from 'react'
-import BurgerMenu from '@atomic/mol/burguer-menu'
-import { HeaderStyled } from './Header.style'
-import { strings } from '@atomic/obj/strings'
-import { CurrentLayer } from '@atomic/mol/burguer-menu/burger-menu.style'
-import ButtonLink from '@atomic/mol/button-link'
+import BurgerMenu from '@/atomic/mol/burguer-menu'
+import { HeaderStyled } from './AppHeader.style'
+import { strings } from '@/atomic/obj/strings'
+import { CurrentLayer } from '@/atomic/mol/burguer-menu/burger-menu.style'
+import ButtonLink from '@/atomic/mol/button-link'
 
 const { route } = strings
 
-const Header: React.FC = () => {
+const AppHeader: React.FC = () => {
   const [currentLayer, setCurrentLayer] = React.useState<CurrentLayer>('button')
 
   const handleClick = (layer: CurrentLayer) => {
@@ -46,4 +46,4 @@ const Header: React.FC = () => {
   )
 }
 
-export default Header
+export default AppHeader

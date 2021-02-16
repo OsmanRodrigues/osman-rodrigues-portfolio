@@ -40,7 +40,7 @@ export const padding = {
   xlarge: '3rem'
 }
 export const overlayStyle = css`
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;

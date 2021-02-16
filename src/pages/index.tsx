@@ -1,8 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
-import { strings } from '@atomic/obj/strings'
-
 import Logo from '../assets/img/or-logo.svg'
+import { strings } from '@/atomic/obj/strings'
 
 const { pageTitle } = strings
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import { BurgerMenuStyled, CurrentLayer } from './burger-menu.style'
-import { Icon } from '@atomic/atm/icon'
+import { Icon } from '@/atomic/atm/icon'
 interface BurgerMenuProps {
   currentLayer: CurrentLayer
   openMenuHandle: () => void
