@@ -25,7 +25,9 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({
         <BurgerMenuStyled.CloseButton onClick={closeMenuHandle}>
           X
         </BurgerMenuStyled.CloseButton>
-        {children}
+        <BurgerMenuStyled.OverlayNavBar>
+          {children}
+        </BurgerMenuStyled.OverlayNavBar>
       </BurgerMenuStyled.Overlay>
     </BurgerMenuStyled.Wrapper>
   )

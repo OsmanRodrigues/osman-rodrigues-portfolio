@@ -7,8 +7,8 @@ interface ButtonLinkProps extends LinkProps {
 }
 
 const ButtonLink: React.FC<ButtonLinkProps> = ({
-  handleClick,
   children,
+  handleClick,
   ...linkProps
 }) => {
   return (

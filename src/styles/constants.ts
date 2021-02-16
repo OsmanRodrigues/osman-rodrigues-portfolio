@@ -33,7 +33,8 @@ export const border = {
 export const padding = {
   small: '0.5rem',
   medium: '1rem',
-  large: '2rem'
+  large: '2rem',
+  xlarge: '3rem'
 }
 export const overlayStyle = css`
   position: fixed;
@@ -42,4 +43,8 @@ export const overlayStyle = css`
   left: 0;
   right: 0;
   z-index: ${ZIndex.High};
+`
+export const buttonRawStyle = css`
+  border: none;
+  background: none;
 `
