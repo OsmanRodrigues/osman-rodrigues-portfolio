@@ -5,6 +5,7 @@ import { Container, Col, Row } from 'react-grid-system'
 import { Logo } from '@/assets/Logo'
 import { HR, VSeparator } from '@/atomic/atm/spacing'
 import { HomeStyled } from '@/styles/pages-style/home.style'
+import { H2 } from '../atomic'
 
 const { pageTitle } = strings
 
@@ -24,7 +25,13 @@ const Home: React.FC = () => {
         </Col>
       </Row>
       <Row justify="center">
-        <Col xs={10} md={10} xl={10}></Col>
+        <Col xs={10} md={10} xl={10}>
+          <H2 centered={true}>
+            {
+              'Sou apaixonado pelos desafios em que a relação entre humanidade & tecnologia proporcionam.'
+            }
+          </H2>
+        </Col>
       </Row>
       <Row>
         <Col></Col>

@@ -5,6 +5,7 @@ const titleStyles = css<TitleProps>`
   color: ${({ theme: { colors }, highlighted }) =>
     highlighted ? colors.highlight : colors.title};
   font-weight: ${({ bolded }) => bolded && 'bold'};
+  text-align: ${({ centered }) => centered && 'center'};
 `
 
 export const H1 = styled.h1`
