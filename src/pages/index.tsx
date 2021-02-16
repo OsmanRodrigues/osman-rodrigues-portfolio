@@ -7,7 +7,7 @@ import { HR, VSeparator } from '@/atomic/atm/spacing'
 import { HomeStyled } from '@/styles/pages-style/home.style'
 import { H2 } from '../atomic'
 
-const { pageTitle } = strings
+const { pageTitle, pageText } = strings
 
 const Home: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const Home: React.FC = () => {
         <title>{pageTitle.home}</title>
       </Head>
       <Row justify="center">
-        <Col xs={12}>
+        <Col>
           <HomeStyled.BrandArea>
             <Logo.OR />
             <VSeparator />
@@ -25,12 +25,8 @@ const Home: React.FC = () => {
         </Col>
       </Row>
       <Row justify="center">
-        <Col xs={10} md={10} xl={10}>
-          <H2 centered={true}>
-            {
-              'Sou apaixonado pelos desafios em que a relação entre humanidade & tecnologia proporcionam.'
-            }
-          </H2>
+        <Col>
+          <H2 centered={true}>{pageText.home.HeroMessage}</H2>
         </Col>
       </Row>
       <Row>
