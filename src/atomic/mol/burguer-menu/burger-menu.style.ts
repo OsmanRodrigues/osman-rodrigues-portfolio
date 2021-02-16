@@ -1,4 +1,9 @@
-import { Breakpoint, buttonRawStyle, overlayStyle } from '@styles/constants'
+import {
+  Breakpoint,
+  buttonRawStyle,
+  overlayStyle,
+  Transition
+} from '@styles/constants'
 import styled from 'styled-components'
 
 export type CurrentLayer = 'button' | 'overlay'
@@ -35,6 +40,7 @@ const Overlay = styled.div<BurgerMenuStyledProps>`
   visibility: ${({ currentLayer }) =>
     currentLayer === 'overlay' ? 'visible' : 'hidden'};
   left: ${({ currentLayer }) => (currentLayer === 'overlay' ? '0' : '100%')};
+  transition: ${Transition.Fast};
 `
 
 const OverlayNavBar = styled.nav`

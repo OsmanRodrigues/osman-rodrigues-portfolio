@@ -46,7 +46,6 @@ export const overlayStyle = css`
   left: 0;
   right: 0;
   z-index: ${ZIndex.High};
-  transition: ${Transition.Fast};
 `
 export const buttonRawStyle = css`
   border: none;
