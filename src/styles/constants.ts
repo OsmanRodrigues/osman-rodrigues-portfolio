@@ -6,7 +6,7 @@ export enum PalleteColor {
   Acessory = '#C4C4C4',
   Gray = '#828282',
   Black = '#333333',
-  White = '#FFFFFF'
+  White = '#f5f5f5'
 }
 export enum Typography {
   Font = 'Roboto',

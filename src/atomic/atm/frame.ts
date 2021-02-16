@@ -15,6 +15,7 @@ export const Frame = styled.div<FrameProps>`
   padding: ${({ theme: { padding } }) => `${padding.medium} ${padding.small}`};
   border-radius: ${({ theme }) => theme.border.radius};
   background-color: ${({ theme: { colors }, color }) => colors[color]};
+  color: red;
 `
 export const IFrame = styled.iframe<IFrameProps>`
   width: ${({ fillIn }) => (fillIn ? '100%' : 'auto')};

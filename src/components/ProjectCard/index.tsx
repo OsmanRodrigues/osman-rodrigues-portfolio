@@ -23,6 +23,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <VSeparator size="small" />
       <Frame color="primary">
         <H3>{title}</H3>
+        <VSeparator />
         <H4>{subtitle}</H4>
       </Frame>
     </ProjectCardStyled.Wrapper>

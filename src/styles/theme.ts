@@ -8,7 +8,7 @@ const theme = {
     highlight: PalleteColor.Black,
     link: PalleteColor.Gray,
     primary: PalleteColor.Primary,
-    secondary: PalleteColor.White,
+    secondary: PalleteColor.Secondary,
     text: PalleteColor.White,
     title: PalleteColor.Gray
   },

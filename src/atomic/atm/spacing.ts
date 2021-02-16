@@ -17,5 +17,5 @@ export const HR = styled.hr`
 export const VSeparator = styled.div<VSeparatorProps>`
   display: block;
   padding: ${({ size, theme: { padding } }) =>
-    size ? padding[size] : padding.medium};
+    size ? padding[size] : padding.small};
 `

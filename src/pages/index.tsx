@@ -21,7 +21,7 @@ const Home: React.FC = () => {
         <Col>
           <HomeStyled.BrandArea>
             <Logo.OR />
-            <VSeparator />
+            <VSeparator size="large" />
             <HR />
           </HomeStyled.BrandArea>
         </Col>
