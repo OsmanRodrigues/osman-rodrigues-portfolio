@@ -11,11 +11,13 @@ const Wrapper = styled.div`
   @media (min-width: ${Breakpoint.Medium}) {
     display: none;
   }
+  display: flex;
 `
 const OpenButton = styled.button<BurgerMenuStyledProps>`
   ${buttonRawStyle};
   display: ${({ currentLayer }) =>
-    currentLayer === 'button' ? 'initial' : 'none'};
+    currentLayer === 'button' ? 'inherit' : 'none'};
+  align-items: center;
 `
 const CloseButton = styled.button`
   ${buttonRawStyle};
@@ -29,14 +31,14 @@ const Overlay = styled.div<BurgerMenuStyledProps>`
   font-size: ${({ theme }) => theme.typography.large};
   background-color: ${({ theme }) => theme.colors.primary};
   display: ${({ currentLayer }) =>
-    currentLayer === 'overlay' ? 'flex' : 'none'};
+    currentLayer === 'overlay' ? 'inherit' : 'none'};
   align-items: flex-start;
 `
 
 const OverlayNavBar = styled.nav`
   height: 100%;
   width: 100%;
-  display: flex;
+  display: inherit;
   flex-direction: column;
   align-items: flex-start;
   padding: ${({ theme }) => theme.padding.xlarge};

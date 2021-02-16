@@ -1,6 +1,6 @@
 import React from 'react'
 import { BurgerMenuStyled, CurrentLayer } from './burger-menu.style'
-
+import { Icon } from '@atomic/atm/icon'
 interface BurgerMenuProps {
   currentLayer: CurrentLayer
   openMenuHandle: () => void
@@ -19,7 +19,7 @@ const BurgerMenu: React.FC<BurgerMenuProps> = ({
         currentLayer={currentLayer}
         onClick={openMenuHandle}
       >
-        btn
+        <Icon.Burger />
       </BurgerMenuStyled.OpenButton>
       <BurgerMenuStyled.Overlay currentLayer={currentLayer}>
         <BurgerMenuStyled.CloseButton onClick={closeMenuHandle}>
