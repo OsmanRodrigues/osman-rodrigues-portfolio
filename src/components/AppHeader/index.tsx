@@ -1,8 +1,8 @@
 import React from 'react'
-import BurgerMenu from '@/atomic/mol/burguer-menu'
+import BurgerMenu from '@/atomic/obj/burguer-menu'
 import { HeaderStyled } from './AppHeader.style'
-import { strings } from '@/atomic/obj/strings'
-import { CurrentLayer } from '@/atomic/mol/burguer-menu/burger-menu.style'
+import { strings } from '@/atomic/atm/strings'
+import { CurrentLayer } from '@/atomic/obj/burguer-menu/burger-menu.style'
 import ButtonLink from '@/atomic/mol/button-link'
 
 const { route } = strings

@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import { strings } from '@/atomic/obj/strings'
+import { strings } from '@/atomic/atm/strings'
 import { Container, Col, Row } from 'react-grid-system'
 import { Logo } from '@/assets/Logo'
 

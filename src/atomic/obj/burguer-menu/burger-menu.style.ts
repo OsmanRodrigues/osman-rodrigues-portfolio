@@ -22,8 +22,6 @@ const Wrapper = styled.div`
 // TODO: check inset property
 const OpenButton = styled.button<BurgerMenuStyledProps>`
   ${buttonRawStyle};
-  display: ${({ currentLayer }) =>
-    currentLayer === 'button' ? 'inherit' : 'none'};
   align-items: center;
 `
 const CloseButton = styled.button`
