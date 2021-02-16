@@ -2,7 +2,7 @@ import { Breakpoint } from '@styles/constants'
 import styled, { css } from 'styled-components'
 
 const Wrapper = styled.header`
-  position: fixed;
+  position: relative;
   top: 0;
   width: 100vw;
   max-height: 5rem;
