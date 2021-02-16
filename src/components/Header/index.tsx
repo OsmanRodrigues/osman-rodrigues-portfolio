@@ -1,23 +1,46 @@
 import React from 'react'
-import Link from 'next/link'
 import BurgerMenu from '@atomic/mol/burguer-menu'
 import { HeaderStyled } from './Header.style'
 import { strings } from '@atomic/obj/strings'
+import { CurrentLayer } from '@atomic/mol/burguer-menu/burger-menu.style'
+import ButtonLink from '@atomic/mol/button-link'
+
 const { route } = strings
 
 const Header: React.FC = () => {
+  const [currentLayer, setCurrentLayer] = React.useState<CurrentLayer>('button')
+
+  const handleClick = (layer: CurrentLayer) => {
+    setCurrentLayer(layer)
+  }
+
   return (
     <HeaderStyled.Wrapper>
       <HeaderStyled.Branding>
-        <Link href={route.home}>Osman R.</Link>
+        <ButtonLink href={route.home}>Osman R.</ButtonLink>
       </HeaderStyled.Branding>
       <HeaderStyled.NavBar>
-        <Link href={route.projetos}>Projetos</Link>
-        <Link href={route.contato}>Contato</Link>
+        <ButtonLink href={route.projetos}>Projetos</ButtonLink>
+        <ButtonLink href={route.contato}>Contato</ButtonLink>
       </HeaderStyled.NavBar>
-      <BurgerMenu>
-        <Link href={route.projetos}>Projetos</Link>
-        <Link href={route.contato}>Contato</Link>
+
+      <BurgerMenu
+        currentLayer={currentLayer}
+        openMenuHandle={() => handleClick('overlay')}
+        closeMenuHandle={() => handleClick('button')}
+      >
+        <ButtonLink
+          handleClick={() => handleClick('button')}
+          href={route.projetos}
+        >
+          Projetos
+        </ButtonLink>
+        <ButtonLink
+          handleClick={() => handleClick('button')}
+          href={route.contato}
+        >
+          Contato
+        </ButtonLink>
       </BurgerMenu>
     </HeaderStyled.Wrapper>
   )

@@ -1,18 +1,28 @@
 import React from 'react'
 import { BurgerMenuStyled, CurrentLayer } from './burger-menu.style'
 
-const BurgerMenu: React.FC = ({ children }) => {
-  const [currentLayer, setCurrentLayer] = React.useState<CurrentLayer>('button')
+interface BurgerMenuProps {
+  currentLayer: CurrentLayer
+  openMenuHandle: () => void
+  closeMenuHandle: () => void
+}
+
+const BurgerMenu: React.FC<BurgerMenuProps> = ({
+  children,
+  openMenuHandle,
+  closeMenuHandle,
+  currentLayer
+}) => {
   return (
     <BurgerMenuStyled.Wrapper>
       <BurgerMenuStyled.OpenButton
         currentLayer={currentLayer}
-        onClick={() => setCurrentLayer('overlay')}
+        onClick={openMenuHandle}
       >
         btn
       </BurgerMenuStyled.OpenButton>
       <BurgerMenuStyled.Overlay currentLayer={currentLayer}>
-        <BurgerMenuStyled.CloseButton onClick={() => setCurrentLayer('button')}>
+        <BurgerMenuStyled.CloseButton onClick={closeMenuHandle}>
           X
         </BurgerMenuStyled.CloseButton>
         {children}
