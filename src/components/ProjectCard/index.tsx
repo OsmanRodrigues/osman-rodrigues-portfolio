@@ -5,16 +5,13 @@ import { H3, H4 } from '@/atomic/atm/typography'
 import { ProjectCardStyled } from './ProjectCard.styles'
 import { VSeparator } from '@/atomic/atm/spacing'
 
-interface ProjectCardProps extends Project {
+interface ProjectCardProps {
   reverse?: boolean
+  data?: Project
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({
-  title,
-  subtitle,
-  url,
-  reverse
-}) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ data, reverse }) => {
+  const { title, subtitle, url } = data
   return (
     <ProjectCardStyled.Wrapper reverse={reverse}>
       <Frame size="large" color="acessory">

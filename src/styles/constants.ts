@@ -14,6 +14,7 @@ export enum Typography {
   Medium = '1rem',
   Large = '1.5rem'
 }
+// TODO: adapt breakpoints to react grid system
 export enum Breakpoint {
   XSmall = '20rem',
   Small = '23rem',
@@ -28,6 +29,11 @@ export enum ZIndex {
 }
 export enum Transition {
   Fast = 'all 0.2s linear 0.2s'
+}
+export enum ColumnGap {
+  Small = '0.5rem',
+  Medium = '1rem',
+  Large = '1.5rem'
 }
 export const border = {
   radius: '0.5rem',

@@ -1,16 +1,16 @@
-import { Breakpoint } from '@/styles/constants'
+import { Breakpoint, ZIndex } from '@/styles/constants'
 import styled, { css } from 'styled-components'
 
 const Wrapper = styled.header`
-  position: relative;
+  position: fixed;
   top: 0;
   width: 100%;
   max-height: 5rem;
   display: flex;
   justify-content: space-between;
   padding: ${({ theme: { padding } }) => `${padding.medium} ${padding.large}`};
+  z-index: ${ZIndex.High};
 `
-// TODO: set to grid
 const headerColStyle = css`
   width: 50%;
   height: 100%;

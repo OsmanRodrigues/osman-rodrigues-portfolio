@@ -31,15 +31,15 @@ const Home: React.FC = () => {
           <H2 centered={true}>{pageText.home.HeroMessage}</H2>
         </Col>
       </Row>
-      <Row>
-        <Col>
+      <Row justify="center">
+        <Col xs={10} sm={8} md={12}>
           <HomeStyled.Gallery>
             {projects.map((project, index) => {
               return (
                 <ProjectCard
                   reverse={index % 2 !== 0}
                   key={project.title + index}
-                  {...project}
+                  data={project}
                 />
               )
             })}
