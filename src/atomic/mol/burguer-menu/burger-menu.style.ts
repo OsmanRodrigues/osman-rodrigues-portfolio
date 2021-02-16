@@ -30,9 +30,11 @@ const Overlay = styled.div<BurgerMenuStyledProps>`
   ${overlayStyle}
   font-size: ${({ theme }) => theme.typography.large};
   background-color: ${({ theme }) => theme.colors.primary};
-  display: ${({ currentLayer }) =>
-    currentLayer === 'overlay' ? 'inherit' : 'none'};
+  display: inherit;
   align-items: flex-start;
+  visibility: ${({ currentLayer }) =>
+    currentLayer === 'overlay' ? 'visible' : 'hidden'};
+  left: ${({ currentLayer }) => (currentLayer === 'overlay' ? '0' : '100%')};
 `
 
 const OverlayNavBar = styled.nav`

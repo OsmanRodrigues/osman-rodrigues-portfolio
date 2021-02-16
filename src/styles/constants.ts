@@ -26,6 +26,9 @@ export enum ZIndex {
   Neutral = 0,
   High = 100
 }
+export enum Transition {
+  Fast = 'all 0.2s linear 0.2s'
+}
 export const border = {
   radius: '0.5rem',
   thickness: '0.25rem'
@@ -43,6 +46,7 @@ export const overlayStyle = css`
   left: 0;
   right: 0;
   z-index: ${ZIndex.High};
+  transition: ${Transition.Fast};
 `
 export const buttonRawStyle = css`
   border: none;
