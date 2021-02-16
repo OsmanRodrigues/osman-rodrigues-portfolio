@@ -18,6 +18,8 @@ const Wrapper = styled.div`
   }
   display: flex;
 `
+// TODO: change display to visibility
+// TODO: check inset property
 const OpenButton = styled.button<BurgerMenuStyledProps>`
   ${buttonRawStyle};
   display: ${({ currentLayer }) =>
