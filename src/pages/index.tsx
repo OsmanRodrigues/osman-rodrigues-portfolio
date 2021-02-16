@@ -25,7 +25,7 @@ const Home: React.FC = () => {
         </Col>
       </Row>
       <Row justify="center">
-        <Col>
+        <Col xs={10} sm={8} md={6}>
           <H2 centered={true}>{pageText.home.HeroMessage}</H2>
         </Col>
       </Row>
