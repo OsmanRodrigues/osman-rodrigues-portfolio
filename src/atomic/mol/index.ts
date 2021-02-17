@@ -1,2 +1,2 @@
 export * from './button-link'
-export * from './burguer-menu'
+export * from '../obj/burguer-menu'

@@ -13,4 +13,11 @@ export default createGlobalStyle`
     font-family: ${({ theme: { typography } }) =>
       `${typography.font}, ${typography.family}`};
   }
+  a{
+    color: ${({ theme }) => theme.colors.secondary};
+    text-decoration: none;
+    &:hover{
+      color:  ${({ theme }) => theme.colors.acessory};
+    }
+  }
 `

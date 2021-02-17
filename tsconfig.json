@@ -18,16 +18,13 @@
     "rootDir": "./src",
     "baseUrl": "./src",
     "paths": {
-      "@assets": ["assets"],
-      "@assets/*": ["assets/*"],
-      "@components": ["components"],
-      "@components/*": ["components/*"],
-      "@pages": ["pages"],
-      "@pages/*": ["pages/*"],
-      "@styles": ["styles"],
-      "@styles/*": ["styles/*"],
-      "@atomic": ["atomic"],
-      "@atomic/*": ["atomic/*"]
+      "@/assets/*": ["assets/*"],
+      "@/components/*": ["components/*"],
+      "@/models/*": ["models/*"],
+      "@/pages/*": ["pages/*"],
+      "@/public/*": ["public/*"],
+      "@/styles/*": ["styles/*"],
+      "@/atomic/*": ["atomic/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

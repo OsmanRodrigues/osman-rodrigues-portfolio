@@ -50,7 +50,7 @@ export default class MyDocument extends Document {
           />
 
           {/* TODO: set favicon here */}
-          <link href="" rel="icon" />
+          <link href="/static/img/favicon.ico" rel="icon" />
         </Head>
         <body>
           <Main />

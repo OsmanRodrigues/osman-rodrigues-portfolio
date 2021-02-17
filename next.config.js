@@ -1,4 +1,5 @@
-const withImages = require('next-images')
-module.exports = withImages({
-  esModules: true
-})
+module.exports = {
+  images: {
+    domains: ['/src/assets']
+  }
+}

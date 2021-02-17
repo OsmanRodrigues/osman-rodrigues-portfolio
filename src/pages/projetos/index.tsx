@@ -1,4 +1,4 @@
-import { strings } from '@atomic/obj/strings'
+import { strings } from '@/atomic/atm/strings'
 import Head from 'next/head'
 import React from 'react'
 

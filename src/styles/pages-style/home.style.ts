@@ -1,9 +1,30 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import { Breakpoint, ColumnGap } from '../constants'
 
-const Wrapper = styled.div`
-  border: 1px solid red;
+const homeSectioStyle = css`
+  padding: ${({ theme: { padding } }) => `${padding.xlarge} 0`};
+`
+
+const BrandArea = styled.div`
+  ${homeSectioStyle}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+`
+const Gallery = styled.section`
+  ${homeSectioStyle}
+  display: flex;
+  height: 60vh;
+
+  @media (max-width: ${Breakpoint.Medium}) {
+    height: auto;
+    flex-direction: column;
+    gap: ${ColumnGap.Medium};
+  }
 `
 
 export const HomeStyled = {
-  Wrapper
+  BrandArea,
+  Gallery
 }

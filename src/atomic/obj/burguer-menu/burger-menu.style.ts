@@ -3,7 +3,7 @@ import {
   buttonRawStyle,
   overlayStyle,
   Transition
-} from '@styles/constants'
+} from '@/styles/constants'
 import styled from 'styled-components'
 
 export type CurrentLayer = 'button' | 'overlay'
@@ -18,12 +18,9 @@ const Wrapper = styled.div`
   }
   display: flex;
 `
-// TODO: change display to visibility
 // TODO: check inset property
 const OpenButton = styled.button<BurgerMenuStyledProps>`
   ${buttonRawStyle};
-  display: ${({ currentLayer }) =>
-    currentLayer === 'button' ? 'inherit' : 'none'};
   align-items: center;
 `
 const CloseButton = styled.button`
