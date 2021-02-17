@@ -24,7 +24,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, reverse }) => {
         <VSeparator />
         <H4>{subtitle}</H4>
         <ButtonLink href={data.url}>
-          <a target="_blank">Ver</a>
+          <a rel="noreferrer" target="_blank">
+            Ver
+          </a>
         </ButtonLink>
       </Frame>
     </ProjectCardStyled.Wrapper>
