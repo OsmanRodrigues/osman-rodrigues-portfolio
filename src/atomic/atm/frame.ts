@@ -1,3 +1,4 @@
+import { boxShadowStyle } from '@/styles/constants'
 import styled from 'styled-components'
 
 interface FrameProps {
@@ -16,6 +17,7 @@ export const Frame = styled.div<FrameProps>`
   border-radius: ${({ theme }) => theme.border.radius};
   background-color: ${({ theme: { colors }, color }) => colors[color]};
   color: red;
+  box-shadow: ${boxShadowStyle};
 `
 export const IFrame = styled.iframe<IFrameProps>`
   width: ${({ fillIn }) => (fillIn ? '100%' : 'auto')};
