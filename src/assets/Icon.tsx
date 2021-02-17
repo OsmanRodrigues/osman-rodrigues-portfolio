@@ -10,5 +10,29 @@ export const Icon = {
       width={20}
       height={20}
     />
+  ),
+  LinkedIn: (): JSX.Element => (
+    <Image
+      src="/static/img/linkedin-icon.svg"
+      alt="linkedin-icon"
+      width={32}
+      height={32}
+    />
+  ),
+  Whatsapp: (): JSX.Element => (
+    <Image
+      src="/static/img/whatsapp-icon.svg"
+      alt="whatsapp-icon"
+      width={32}
+      height={32}
+    />
+  ),
+  GitHub: (): JSX.Element => (
+    <Image
+      src="/static/img/github-icon.svg"
+      alt="github-icon"
+      width={32}
+      height={32}
+    />
   )
 }

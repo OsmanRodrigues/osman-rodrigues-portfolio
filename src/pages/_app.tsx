@@ -5,6 +5,7 @@ import { ThemeProvider } from 'styled-components'
 import theme from '../styles/theme'
 import AppHeader from '@/components/AppHeader'
 import { setConfiguration } from 'react-grid-system'
+import AppFooter from '@/components/AppFooter'
 
 setConfiguration({ maxScreenClass: 'xl', gridColumns: 12 })
 
@@ -14,6 +15,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       <AppHeader />
       <Component {...pageProps} />
       <GlobalStyle />
+      <AppFooter />
     </ThemeProvider>
   )
 }
