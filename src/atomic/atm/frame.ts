@@ -12,7 +12,7 @@ interface IFrameProps {
 
 export const Frame = styled.div<FrameProps>`
   width: 100%;
-  height: ${({ size }) => (size === 'large' ? '75%' : '25%')};
+  height: auto; /* ${({ size }) => (size === 'large' ? '75%' : '25%')}; */
   padding: ${({ theme: { padding } }) => `${padding.medium} ${padding.small}`};
   border-radius: ${({ theme }) => theme.border.radius};
   background-color: ${({ theme: { colors }, color }) => colors[color]};
