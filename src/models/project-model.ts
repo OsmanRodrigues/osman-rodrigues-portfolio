@@ -3,4 +3,5 @@ export interface Project {
   subtitle: string
   description?: string
   url: string
+  img: string
 }

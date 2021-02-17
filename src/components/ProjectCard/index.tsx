@@ -1,5 +1,6 @@
 import React from 'react'
-import { Frame, IFrame } from '@/atomic/atm/frame'
+import Image from 'next/image'
+import { Frame } from '@/atomic/atm/frame'
 import { Project } from '@/models/project-model'
 import { H3, H4 } from '@/atomic/atm/typography'
 import { ProjectCardStyled } from './ProjectCard.styles'
@@ -12,11 +13,17 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ data, reverse }) => {
-  const { title, subtitle, url } = data
+  const { title, subtitle, img } = data
   return (
     <ProjectCardStyled.Wrapper reverse={reverse}>
       <Frame size="large" color="acessory">
-        <IFrame src={url} title={title} fillIn={true} />
+        <Image
+          src={img}
+          width={315}
+          height={315}
+          layout="intrinsic"
+          objectFit="contain"
+        />
       </Frame>
       <VSeparator size="small" />
       <Frame color="primary">
