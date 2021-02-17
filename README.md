@@ -1,3 +1,3 @@
 # Osman Rodrigues portfolio
 
-### Hi, I'm Osman!
+### Oi, eu sou o Osman! Como posso te ajudar hoje?
