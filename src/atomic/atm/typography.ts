@@ -11,6 +11,11 @@ const minorTitleColor = css<TitleProps>`
   color: ${({ theme: { colors }, highlighted }) =>
     highlighted ? colors.highlight : colors.secondary};
 `
+const textStyles = css<TextProps>`
+  color: ${({ theme: { colors }, highlighted }) =>
+    highlighted ? colors.text : colors.highlight};
+  font-weight: ${({ bolded }) => bolded && 'bold'};
+`
 
 export const H1 = styled.h1`
   ${titleStyles}
@@ -27,7 +32,8 @@ export const H4 = styled.h4`
   ${minorTitleColor}
 `
 export const Paragraph = styled.p<TextProps>`
-  color: ${({ theme: { colors }, highlighted }) =>
-    highlighted ? colors.text : colors.highlight};
-  font-weight: ${({ bolded }) => bolded && 'bold'};
+  ${textStyles}
+`
+export const Span = styled.span<TextProps>`
+  ${textStyles}
 `

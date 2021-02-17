@@ -18,7 +18,7 @@ export const strings = {
   pageText: {
     home: {
       HeroMessage:
-        'Sou apaixonado pelos desafios em que a relação entre humanidade & tecnologia proporcionam.'
+        'Simplicidade, autenticidade & foco nas pessoas. Como posso te ajudar hoje?'
     }
   }
 }

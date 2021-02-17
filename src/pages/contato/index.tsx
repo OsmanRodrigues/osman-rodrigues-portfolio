@@ -1,4 +1,5 @@
 import { strings } from '@/atomic/atm/strings'
+import { H1 } from '@/atomic/atm/typography'
 import Head from 'next/head'
 import React from 'react'
 
@@ -10,7 +11,18 @@ const Contato: React.FC = () => {
       <Head>
         <title>{pageTitle.contato}</title>
       </Head>
-      <h1>Contato</h1>
+      <div
+        style={{
+          width: '100%',
+          height: '100vh',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center'
+        }}
+      >
+        <H1>Em breve</H1>
+      </div>
     </div>
   )
 }
