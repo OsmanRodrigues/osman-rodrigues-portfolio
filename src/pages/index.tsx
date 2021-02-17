@@ -5,11 +5,11 @@ import { Container, Col, Row } from 'react-grid-system'
 import { Logo } from '@/assets/Logo'
 import { HR, VSeparator } from '@/atomic/atm/spacing'
 import { HomeStyled } from '@/styles/pages-style/home.style'
-import { H2 } from '../atomic'
+import { H2, Span } from '../atomic'
 import { projects } from 'mocks'
 import ProjectCard from '@/components/ProjectCard'
 
-const { pageTitle, pageText } = strings
+const { pageTitle } = strings
 // TODO: implements masonry grid
 const Home: React.FC = () => {
   return (
@@ -28,7 +28,10 @@ const Home: React.FC = () => {
       </Row>
       <Row justify="center">
         <Col xs={10} sm={8} md={6}>
-          <H2 centered={true}>{pageText.home.HeroMessage}</H2>
+          <H2 centered={true}>
+            Simplicidade, autenticidade <Span>&amp;</Span> foco nas{' '}
+            <Span>pessoas</Span>. Como posso <Span>te ajudar</Span> hoje?
+          </H2>
         </Col>
       </Row>
       <Row justify="center">
