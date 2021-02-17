@@ -15,7 +15,7 @@ const BrandArea = styled.div`
 const Gallery = styled.section`
   ${homeSectioStyle}
   display: flex;
-  height: 60vh;
+  min-height: 60vh;
 
   @media (max-width: ${Breakpoint.Medium}) {
     height: auto;
