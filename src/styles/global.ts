@@ -16,6 +16,7 @@ export default createGlobalStyle`
   a{
     color: ${({ theme }) => theme.colors.secondary};
     text-decoration: none;
+
     &:hover{
       color:  ${({ theme }) => theme.colors.acessory};
     }
