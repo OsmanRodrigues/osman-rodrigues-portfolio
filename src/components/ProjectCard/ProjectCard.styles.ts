@@ -7,7 +7,7 @@ interface WrapperProps {
 
 const Wrapper = styled.div<WrapperProps>`
   display: inline-flex;
-  height: 100%;
+  height: auto;
   flex-direction: ${({ reverse }) => (reverse ? 'column-reverse' : 'column')};
   padding: ${({ theme }) => `0 ${theme.padding.small}`};
 
