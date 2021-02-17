@@ -4,6 +4,7 @@ import { Project } from '@/models/project-model'
 import { H3, H4 } from '@/atomic/atm/typography'
 import { ProjectCardStyled } from './ProjectCard.styles'
 import { VSeparator } from '@/atomic/atm/spacing'
+import ButtonLink from '@/atomic/mol/button-link'
 
 interface ProjectCardProps {
   reverse?: boolean
@@ -22,6 +23,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ data, reverse }) => {
         <H3>{title}</H3>
         <VSeparator />
         <H4>{subtitle}</H4>
+        <ButtonLink href={data.url}>
+          <a target="_blank">Ver</a>
+        </ButtonLink>
       </Frame>
     </ProjectCardStyled.Wrapper>
   )
