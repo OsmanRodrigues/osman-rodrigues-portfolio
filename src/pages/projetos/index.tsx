@@ -14,7 +14,7 @@ const Projetos: React.FC = () => {
       <div
         style={{
           width: '100%',
-          height: '100vh',
+          height: '50vh',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
